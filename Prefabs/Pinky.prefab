@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6929366753723122149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6929366753723122150}
+  - component: {fileID: 6929366753723122151}
+  - component: {fileID: 6929366753723122145}
+  - component: {fileID: 6929366753723122148}
+  m_Layer: 0
+  m_Name: Pinky
+  m_TagString: Ghost
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6929366753723122150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929366753723122149}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.99, y: 15.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &6929366753723122151
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929366753723122149}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 770b4c17938a18c45bf5312137ea8036, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &6929366753723122145
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929366753723122149}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6929366753723122148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929366753723122149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac5b4cbd71aac8f4294f04e8428b3f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5.85
+  FrightenedSpeed: 4
+  ConsumedSpeed: 10
+  NormalSpeed: 5.85
+  CanMove: 1
+  PinkyReleaseTimer: 5
+  InkyReleaseTimer: 14
+  ClydeReleaseTimer: 21
+  ghostReleaseTimer: 0
+  isInGhostHouse: 1
+  StartPosition: {fileID: 0}
+  ScatterNode: {fileID: 0}
+  GhostHouse: {fileID: 0}
+  ScatterTimer1: 7
+  ChaseTimer1: 20
+  ScatterTimer2: 7
+  ChaseTimer2: 20
+  ScatterTimer3: 5
+  ChaseTimer3: 20
+  ScatterTimer4: 5
+  FrightenedTimer: 10
+  FrightenedBlinkStartTimer: 7
+  EyesLeft: {fileID: 21300000, guid: e41132a688430be42b9a3ac6a4532c25, type: 3}
+  EyesRight: {fileID: 21300000, guid: 79de8387d724b504f9ff73ac59f202f1, type: 3}
+  EyesDown: {fileID: 21300000, guid: f49f06723a0188f43bda7f89811f37e2, type: 3}
+  EyesUp: {fileID: 21300000, guid: 7b738ed41926a1e4a99d4bc84d4e7323, type: 3}
+  AnimationLeft: {fileID: 9100000, guid: ae15bdb138fc3a94e90cd764acba1ee8, type: 2}
+  AnimationRight: {fileID: 9100000, guid: 314c300c81db2e84c9aee8d400b2a842, type: 2}
+  AnimationDown: {fileID: 9100000, guid: 906a1bfb9c7122f48842aeddb591870c, type: 2}
+  AnimationUp: {fileID: 9100000, guid: a0a0b7e3a8c72094895abd8891c093ed, type: 2}
+  AnimationFrightened: {fileID: 9100000, guid: c3b251847d1ba7e45bf93028d855bf3a, type: 2}
+  AnimationBlink: {fileID: 9100000, guid: c0310d72a24944947b6a4d4d0a0fbc7c, type: 2}
+  ghostType: 1
